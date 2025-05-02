@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <header>        
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo border border-black">
+                <h2 class="logo-text">Coffee</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times "></button>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- hero section -->
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Best Coffee</h2>
+                    <h3 class="subtitle">Make your day great with our special coffee!</h3>
+                    <p class="description">Welcome to our coffee paradise, where every bean tells story and every cup
+                        sparks joy.</p>
+                    <div class="buttons">
+                        <a href="#" class="button order-now">Order Now</a>
+                        <a href="#" class="button contact-us">Contact Us</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="Image/coffee-hero-section.png" class="hero-image" alt="hero">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section-->
+         <section class="  ">
+            <div class=" flex max-w-[1920px] gap-y-[30px] flex-col md:flex-row w-[100%] p-10 mx-auto">
+                <div class=" md:w-[50%]  flex justify-center items-center  border-black">
+                    <img src="Image/about-image.jpg" alt="About" class="md:w-[320px] w-[220px] h-[220px] md:h-[320px] rounded-full">
+                </div>
+                <div class=" md:w-[50%]  flex flex-col text-center justify-center    border-black md:gap-[40px] ">
+                    <h2 class=" text-[30px] justify-center items-center font-[700] flex flex-col">About Us
+                        <div class="border-4   border-orange-200 rounded-full w-[80px]">
+
+                        </div>
+                    </h2>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magnam aliquam pariatur exercitationem provident ad sequi repellendus debitis. Sed facere nobis eveniet atque nemo officia sit perspiciatis doloribus autem tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magnam aliquam pariatur exercitationem provident ad sequi repellendus debitis. Sed facere nobis eveniet atque nemo officia sit perspiciatis doloribus autem tempora!</p>
+                    <div class="flex gap-[20px] mx-auto">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+         </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
