@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Website</title>
+    <!-- Linking Font Awesom for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- Linking Swipper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -17,7 +19,7 @@
     <header>        
         <nav class="navbar section-content">
             <a href="#" class="nav-logo border border-black">
-                <h2 class="logo-text">Coffee</h2>
+                <h2 class="logo-text">☕ Coffee</h2>
             </a>
             <ul class="nav-menu">
                 <button id="menu-close-button" class="fas fa-times "></button>
@@ -29,9 +31,6 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Testimonials</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Gallery</a>
@@ -46,7 +45,7 @@
     </header>
 
     <main>
-        <!-- hero section -->
+        <!-- Hero section -->
         <section class="hero-section">
             <div class="section-content">
                 <div class="hero-details">
@@ -66,28 +65,64 @@
         </section>
 
         <!-- About Section-->
-         <section class="  ">
-            <div class=" flex max-w-[1920px] gap-y-[30px] flex-col md:flex-row w-[100%] p-10 mx-auto">
-                <div class=" md:w-[50%]  flex justify-center items-center  border-black">
-                    <img src="Image/about-image.jpg" alt="About" class="md:w-[320px] w-[220px] h-[220px] md:h-[320px] rounded-full">
+         <section class="about-section">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="Image/about-image.jpg" class="about-image">
                 </div>
-                <div class=" md:w-[50%]  flex flex-col text-center justify-center    border-black md:gap-[40px] ">
-                    <h2 class=" text-[30px] justify-center items-center font-[700] flex flex-col">About Us
-                        <div class="border-4   border-orange-200 rounded-full w-[80px]">
-
-                        </div>
-                    </h2>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magnam aliquam pariatur exercitationem provident ad sequi repellendus debitis. Sed facere nobis eveniet atque nemo officia sit perspiciatis doloribus autem tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magnam aliquam pariatur exercitationem provident ad sequi repellendus debitis. Sed facere nobis eveniet atque nemo officia sit perspiciatis doloribus autem tempora!</p>
-                    <div class="flex gap-[20px] mx-auto">
+                <div class="about-details">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ex, aspernatur ducimus molestiae nulla aliquid maiores sint quasi corrupti sed qui nam suscipit natus, iste fugit at, quisquam nesciunt placeat? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quis quisquam corporis architecto asperiores corrupti rerum odit natus distinctio cupiditate ipsum saepe nemo, voluptatem autem repellendus a vitae enim cumque.</p>
+                    <div class="social-link-list">
                         <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
                         <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
                     </div>
                 </div>
             </div>
          </section>
+
+         <!-- Menu Section -->
+          <section class="menu-section">
+            <h2 class="section-title ">Our Menu</h2>
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="Image/hot-beverages.png" alt="Hot hot-beverages" class="menu-image">
+                        <h3 class="name">Hot Beverages</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ducimus tempora deserunt ratione, est, accusantium animi, nihil fugiat earum aut veritatis corrupti pariatur debitis quae eius quibusdam! Totam, ut cumque.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="Image/cold-beverages.png" alt="Hot hot-beverages" class="menu-image">
+                        <h3 class="name">Cold Beverages</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ducimus tempora deserunt ratione, est, accusantium animi, nihil fugiat earum aut veritatis corrupti pariatur debitis quae eius quibusdam! Totam, ut cumque.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="Image/refreshment.png" alt="Hot hot-beverages" class="menu-image">
+                        <h3 class="name">Refreshment</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ducimus tempora deserunt ratione, est, accusantium animi, nihil fugiat earum aut veritatis corrupti pariatur debitis quae eius quibusdam! Totam, ut cumque.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="Image/special-combo.png" alt="Hot hot-beverages" class="menu-image">
+                        <h3 class="name">Social Combo</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ducimus tempora deserunt ratione, est, accusantium animi, nihil fugiat earum aut veritatis corrupti pariatur debitis quae eius quibusdam! Totam, ut cumque.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="Image/desserts.png" alt="Hot hot-beverages" class="menu-image">
+                        <h3 class="name">Deserts</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ducimus tempora deserunt ratione, est, accusantium animi, nihil fugiat earum aut veritatis corrupti pariatur debitis quae eius quibusdam! Totam, ut cumque.</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="Image/burger-frenchfries.png" alt="Hot hot-beverages" class="menu-image">
+                        <h3 class="name">Burger</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ducimus tempora deserunt ratione, est, accusantium animi, nihil fugiat earum aut veritatis corrupti pariatur debitis quae eius quibusdam! Totam, ut cumque.</p>
+                    </li>
+                </ul>
+            </div>
+          </section>
     </main>
 
+    <!-- Linking Custom CSS -->
     <script src="script.js"></script>
 </body>
 </html>
